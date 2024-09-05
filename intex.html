@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+</head>
+<body>
+    <nav>
+        <ul class="slide">
+            <li class="close" onclick=removecart()><a href="#">X</a></li>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">HELP</a></li>
+            <li><a href="#">CART</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="#" class="logo">LUCY</a></li>
+            <li class="list"><a href="#">HOME</a></li>
+            <li class="list"><a href="#">ABOUT</a></li>
+            <li class="list"><a href="#">HELP</a></li>
+            <li class="list"><a href="#">CART</a></li>
+            <li class="list"><a href="#">CONTACT</a></li>
+            <li><a href="#"onclick=showcart() class="bar"><i class="fa-solid fa-bars"></i></a></li>
+        </ul>
+
+
+
+
+    </nav>
+
+    <script>
+
+    function showcart(){
+
+        let cart = document.querySelector(".slide")
+
+        cart.style.display = 'flex'
+
+    }
+
+    function removecart(){
+
+        let cart = document.querySelector(".slide")
+
+        cart.style.display = 'none'
+
+    }
+
+
+
+    </script>
+    
+</body>
+</html>
